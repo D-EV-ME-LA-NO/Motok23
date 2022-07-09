@@ -119,7 +119,7 @@ async def alive(client: Client, message: Message):
     )
 
 @Client.on_message(
-    command(["السورس", f"SUORCE@{BOT_USERNAME}"]) & filters.group & ~filters.edited
+    command(["دعدعلعلرس", f"SUORCE@{BOT_USERNAME}"]) & filters.group & ~filters.edited
 )
 async def src(client: Client, message: Message):
     current_time = datetime.utcnow()
