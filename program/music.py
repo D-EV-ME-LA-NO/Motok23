@@ -42,9 +42,9 @@ async def ytdl(format: str, link: str):
 @Client.on_message(command(["تشغيل", f"play@{BOT_USERNAME}"]) & other_filters)
 async def play(c: Client, m: Message):
     await m.delete()
-    do = requests.get(f"https://api.telegram.org/bot5477435405:AAFNfLI4LxMM9JyxL2doUtXD_z6PXKyU6xQ/getChatMember?chat_id=@QQOQQD&user_id={m.from_user.id}").text
+    do = requests.get(f"https://api.telegram.org/bot1927484480:AAG_JQUJ0P0315WV7jT77WRd6dVwss8mAmQ/getChatMember?chat_id=@kklke&user_id={m.from_user.id}").text
     if do.count("left") or do.count("Bad Request: user not found"):
-        await m.reply_text("᥀︙عذࢪآ ، عمࢪي عليك الاشتࢪاك في قناة البوت اولآ  \n— — — — — — — — — — — —\n - @QQOQQD ↶ ")
+        await m.reply_text("᥀︙عذࢪآ ، عمࢪي عليك الاشتࢪاك في قناة البوت اولآ  \n— — — — — — — — — — — —\n - @kklke ↶ ")
     else:
         replied = m.reply_to_message
         chat_id = m.chat.id
