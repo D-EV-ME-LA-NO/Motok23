@@ -90,6 +90,50 @@ async def start_(client: Client, message: Message):
         disable_web_page_preview=True,
     )
 
+@Client.on_message(command(["مبرمج السورس", f"ؤمن", f"ورس", f"السورس"]) & filters.group & ~filters.edited)
+async def start(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/74618dd250c5ffe4d06b9.jpg",
+        caption=f"""Programmer [source enushs•](https://t.me/kklke) 𖡼\nᴛᴏ ᴄᴏᴍᴍụɴɪᴄᴀᴛᴇ ᴛᴏɢᴇᴛʜᴇʀ 𖡼\nғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ 𖡼""",
+        reply_markup=InlineKeyboardMarkup(
+         [
+            [
+                InlineKeyboardButton("source enushs•", url=f"https://t.me/kklke"),
+            ],
+            [
+                InlineKeyboardButton(
+                    "DeV enushs•", url=f"https://t.me/OR_33"
+                ),
+            ],
+            [
+                InlineKeyboardButton("♡اضف البوت الى مجموعتك♡", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+            ]
+         ]
+     )
+  )
+
+@Client.on_message(command(["لمطور", "المطور"]) & filters.group & ~filters.edited)
+async def help(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"{DEV_PHOTO}",
+        caption=f"""◍ الاول : هو مطور السورس \n◍ الثاني : هو مطور البوت\n√""",
+        reply_markup=InlineKeyboardMarkup(
+         [
+            [
+                InlineKeyboardButton("source enushs•", url=f"https://t.me/kklke"),
+            ],
+            [
+                InlineKeyboardButton(
+                        DEV_NAME, url=f"https://t.me/{OWNER_NAME}"
+                ),
+            ],
+            [
+                InlineKeyboardButton("ضيـف البـوت لمجمـوعتـك ✅", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+            ]
+         ]
+     )
+  )
+
 
 @Client.on_message(
     command(["الحاله", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
@@ -102,7 +146,7 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("‹ قناة السوࢪس ›", url=f"https://t.me/QQOQQD"),
+                InlineKeyboardButton("‹ قناة السوࢪس ›", url=f"https://t.me/kklke"),
                 InlineKeyboardButton(
                     "‹ مطور السوࢪس ›", url=f"https://t.me/OR_33"
                 ),
@@ -129,7 +173,7 @@ async def src(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("‹ قناة السوࢪس ›", url=f"https://t.me/QQOQQD"),
+                InlineKeyboardButton("‹ قناة السوࢪس ›", url=f"https://t.me/kklke"),
                 InlineKeyboardButton(
                     "‹ مطور السورس ›", url=f"https://t.me/OR_33"
                 ),
