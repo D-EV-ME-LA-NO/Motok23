@@ -1,4 +1,4 @@
-# Copyright (C) 2021 By Veez Music-Project
+ji# Copyright (C) 2021 By Veez Music-Project
 # Commit Start Date 20/10/2021
 # Finished On 28/10/2021
 
@@ -42,7 +42,7 @@ async def ytdl(format: str, link: str):
 @Client.on_message(command(["تشغيل", f"play@{BOT_USERNAME}"]) & other_filters)
 async def play(c: Client, m: Message):
     await m.delete()
-    do = requests.get(f"https://api.telegram.org/bo1927484480:AAGVD2zIM3H4eqsmA48G_Q5u9j61eAKqjo0/getChatMember?chat_id=@KKLKE&user_id={m.from_user.id}").text
+    do = requests.get(f"https://api.telegram.org/bo1927484D2zIM3H4eqsmA48G_Q5u9j61eAKqjo0/getChatMember?chat_id=@KKLKE&user_id={m.from_user.id}").text
     if do.count("left") or do.count("Bad Request: user not found"):
         await m.reply_text("᥀︙عذࢪآ ، عمࢪي عليك الاشتࢪاك في قناة البوت اولآ  \n— — — — — — — — — — — —\n - @KKLKE ↶ ")
     else:
